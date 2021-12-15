@@ -1,4 +1,3 @@
-import './styles.css';
 import PixabayService from "./js/apiService";
 
 const searchForm = document.querySelector(".js-form");

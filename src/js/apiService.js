@@ -6,13 +6,14 @@ export default class PixabayService {
     }
     fetchPictures() {
         const KEY = "24078076-056bd2e530cc19b75a9dfc811";
-        const url = `https://pixabay.com/api/?key=${KEY}&q=${this.searchQuery}&per_page=10&page=${this.page}`;
+        const url = `https://pixabay.com/api/?key=${KEY}&q=${this.searchQuery}&per_page=12&page=${this.page}`;
 
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 this.page += 1;
             });
+        console.log(data);
     }
 
     resetPage() {
